@@ -27,7 +27,7 @@ extension Version : Decodable {
 			e <|| "links",
 			e <|| "media-types",
 			(e <| "status").flatMap { Status(rawValue: $0)! },
-			(e <| "updated").flatMap { NSDate(rfc3339String: $0)! }
+			(e <| "updated").flatMap { NSDate(dateString: $0)! }
 			
 			).map(Version.init)
 	}
@@ -72,33 +72,6 @@ extension VersionID : StringLiteralConvertible {
 		
 		self.init(value)
 	}
-}
-
-public struct Link {
-	
-	public var href:NSURL
-	public var rel:LinkRel
-	public var type:String?
-}
-
-extension Link : Decodable {
-	
-	public static func decode(e: Extractor) -> Link? {
-		
-		return build(
-			
-			(e <| "href").flatMap(NSURL.init),
-			(e <| "rel").flatMap(LinkRel.init),
-			e <|? "type"
-			
-			).map(Link.init)
-	}
-}
-
-public enum LinkRel : String {
-	
-	case SelfLink = "self"
-	case DescribedBy = "describedby"
 }
 
 public struct MediaType {

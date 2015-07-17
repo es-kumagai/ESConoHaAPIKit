@@ -11,3 +11,5 @@ import APIKit
 public final class ConoHaAPI : API {
 	
 }
+
+public typealias JSONObject = [String:AnyObject]

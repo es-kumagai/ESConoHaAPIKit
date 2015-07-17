@@ -20,6 +20,24 @@
 		B1362B0E1B5866D000FC7443 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0C1B5866D000FC7443 /* Identity.swift */; };
 		B1362B101B588D7800FC7443 /* IdentityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */; };
 		B1362B111B588D7800FC7443 /* IdentityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */; };
+		B1362B181B58A52300FC7443 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B171B58A52300FC7443 /* Token.swift */; };
+		B1362B191B58A52300FC7443 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B171B58A52300FC7443 /* Token.swift */; };
+		B1362B1B1B58A5A100FC7443 /* Tenant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B1A1B58A5A100FC7443 /* Tenant.swift */; };
+		B1362B1C1B58A5A100FC7443 /* Tenant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B1A1B58A5A100FC7443 /* Tenant.swift */; };
+		B1362B1E1B58A7AD00FC7443 /* ServiceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B1D1B58A7AD00FC7443 /* ServiceCatalog.swift */; };
+		B1362B1F1B58A7AD00FC7443 /* ServiceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B1D1B58A7AD00FC7443 /* ServiceCatalog.swift */; };
+		B1362B211B58A7D300FC7443 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B201B58A7D300FC7443 /* Endpoint.swift */; };
+		B1362B221B58A7D300FC7443 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B201B58A7D300FC7443 /* Endpoint.swift */; };
+		B1362B241B58A8AF00FC7443 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B231B58A8AF00FC7443 /* Link.swift */; };
+		B1362B251B58A8AF00FC7443 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B231B58A8AF00FC7443 /* Link.swift */; };
+		B1362B271B58ACCB00FC7443 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B261B58ACCB00FC7443 /* User.swift */; };
+		B1362B281B58ACCB00FC7443 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B261B58ACCB00FC7443 /* User.swift */; };
+		B1362B2A1B58ADEB00FC7443 /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B291B58ADEB00FC7443 /* Access.swift */; };
+		B1362B2B1B58ADEB00FC7443 /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B291B58ADEB00FC7443 /* Access.swift */; };
+		B1362B321B58B1A500FC7443 /* APIUser.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1362B311B58B1A500FC7443 /* APIUser.plist */; };
+		B1362B331B58B1A500FC7443 /* APIUser.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1362B311B58B1A500FC7443 /* APIUser.plist */; };
+		B1362B351B58B20500FC7443 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B341B58B20500FC7443 /* APIUser.swift */; };
+		B1362B361B58B20500FC7443 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B341B58B20500FC7443 /* APIUser.swift */; };
 		B13D5F871B57D19700A07599 /* ESConoHaAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */; };
 		B13D5F8C1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F8B1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift */; };
 		B13D5F9C1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = B13D5F9B1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +78,16 @@
 		B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConoHaAPIKit.swift; sourceTree = "<group>"; };
 		B1362B0C1B5866D000FC7443 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityServiceTests.swift; sourceTree = "<group>"; };
+		B1362B161B58A2F100FC7443 /* Identity_post-tokens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Identity_post-tokens.json"; sourceTree = "<group>"; };
+		B1362B171B58A52300FC7443 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		B1362B1A1B58A5A100FC7443 /* Tenant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tenant.swift; sourceTree = "<group>"; };
+		B1362B1D1B58A7AD00FC7443 /* ServiceCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCatalog.swift; sourceTree = "<group>"; };
+		B1362B201B58A7D300FC7443 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B1362B231B58A8AF00FC7443 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		B1362B261B58ACCB00FC7443 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B1362B291B58ADEB00FC7443 /* Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Access.swift; sourceTree = "<group>"; };
+		B1362B311B58B1A500FC7443 /* APIUser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIUser.plist; sourceTree = "<group>"; };
+		B1362B341B58B20500FC7443 /* APIUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
 		B13D5F5F1B57D12600A07599 /* ESConoHaAPIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESConoHaAPIKit.h; sourceTree = "<group>"; };
 		B13D5F611B57D12600A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B13D5F6D1B57D12600A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +163,13 @@
 			children = (
 				B1248A641B5857A5000C46AD /* Extension.swift */,
 				B1248A671B5857C7000C46AD /* Version.swift */,
+				B1362B231B58A8AF00FC7443 /* Link.swift */,
+				B1362B171B58A52300FC7443 /* Token.swift */,
+				B1362B1A1B58A5A100FC7443 /* Tenant.swift */,
+				B1362B1D1B58A7AD00FC7443 /* ServiceCatalog.swift */,
+				B1362B201B58A7D300FC7443 /* Endpoint.swift */,
+				B1362B261B58ACCB00FC7443 /* User.swift */,
+				B1362B291B58ADEB00FC7443 /* Access.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -147,9 +182,26 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		B1362B151B58A29000FC7443 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				B1362B161B58A2F100FC7443 /* Identity_post-tokens.json */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		B1362B301B58B15500FC7443 /* PrivateData */ = {
+			isa = PBXGroup;
+			children = (
+				B1362B311B58B1A500FC7443 /* APIUser.plist */,
+			);
+			path = PrivateData;
+			sourceTree = "<group>";
+		};
 		B13D5F521B57D12600A07599 = {
 			isa = PBXGroup;
 			children = (
+				B1362B301B58B15500FC7443 /* PrivateData */,
 				B13D5F761B57D13E00A07599 /* Podfile */,
 				B13D5F5E1B57D12600A07599 /* ESConoHaAPIKit */,
 				B13D5F7E1B57D19700A07599 /* ESConoHaAPIKit_iOS */,
@@ -189,6 +241,8 @@
 		B13D5F6A1B57D12600A07599 /* ESConoHaAPIKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				B1362B341B58B20500FC7443 /* APIUser.swift */,
+				B1362B151B58A29000FC7443 /* Response */,
 				B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */,
 				B13D5F6D1B57D12600A07599 /* Info.plist */,
 			);
@@ -405,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1362B321B58B1A500FC7443 /* APIUser.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1362B331B58B1A500FC7443 /* APIUser.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,9 +638,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1362B2A1B58ADEB00FC7443 /* Access.swift in Sources */,
 				B1248A681B5857C7000C46AD /* Version.swift in Sources */,
+				B1362B181B58A52300FC7443 /* Token.swift in Sources */,
+				B1362B211B58A7D300FC7443 /* Endpoint.swift in Sources */,
 				B1362B0D1B5866D000FC7443 /* Identity.swift in Sources */,
+				B1362B1B1B58A5A100FC7443 /* Tenant.swift in Sources */,
+				B1362B1E1B58A7AD00FC7443 /* ServiceCatalog.swift in Sources */,
+				B1362B241B58A8AF00FC7443 /* Link.swift in Sources */,
 				B1248A651B5857A5000C46AD /* Extension.swift in Sources */,
+				B1362B271B58ACCB00FC7443 /* User.swift in Sources */,
 				B1362B091B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13D5F8C1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift in Sources */,
+				B1362B351B58B20500FC7443 /* APIUser.swift in Sources */,
 				B1362B101B588D7800FC7443 /* IdentityServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,9 +666,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1362B2B1B58ADEB00FC7443 /* Access.swift in Sources */,
 				B1248A691B5857C7000C46AD /* Version.swift in Sources */,
+				B1362B191B58A52300FC7443 /* Token.swift in Sources */,
+				B1362B221B58A7D300FC7443 /* Endpoint.swift in Sources */,
 				B1362B0E1B5866D000FC7443 /* Identity.swift in Sources */,
+				B1362B1C1B58A5A100FC7443 /* Tenant.swift in Sources */,
+				B1362B1F1B58A7AD00FC7443 /* ServiceCatalog.swift in Sources */,
+				B1362B251B58A8AF00FC7443 /* Link.swift in Sources */,
 				B1248A661B5857A5000C46AD /* Extension.swift in Sources */,
+				B1362B281B58ACCB00FC7443 /* User.swift in Sources */,
 				B1362B0A1B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13D5FA81B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift in Sources */,
+				B1362B361B58B20500FC7443 /* APIUser.swift in Sources */,
 				B1362B111B588D7800FC7443 /* IdentityServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,20 +10,33 @@ import APIKit
 
 extension NSDate {
 	
-	public convenience init?(rfc3339String string:String) {
-		
-		let formatter = NSDateFormatter()
-		
-		formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-		formatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-		formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-		
-		guard let date = formatter.dateFromString(string) else {
+	public convenience init?(dateString string:String) {
+	
+		let dateFromFormat = { (format:String) -> NSDate? in
+
+			let formatter = NSDateFormatter()
 			
-			return nil
+			formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+			formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+			formatter.dateFormat = format
+			
+			return formatter.dateFromString(string)
 		}
 		
-		self.init(timeIntervalSince1970: date.timeIntervalSince1970)
+		// RFC3339
+		if let date = dateFromFormat("yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'") {
+			
+			self.init(timeIntervalSince1970: date.timeIntervalSince1970)
+			return
+		}
+		
+		if let date = dateFromFormat("yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'S") {
+			
+			self.init(timeIntervalSince1970: date.timeIntervalSince1970)
+			return
+		}
+
+		return nil
 	}
 }
 

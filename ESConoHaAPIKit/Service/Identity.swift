@@ -21,6 +21,27 @@ extension IdentityRequest {
 	}
 }
 
+extension IdentityRequest {
+
+	static func makeAuth(username:String, password:String, tenantID:String?) -> JSONObject {
+		
+		var auth = JSONObject()
+		
+		auth["passwordCredentials"] = [
+			
+				"username":username,
+				"password":password
+		]
+		
+		if let tenantID = tenantID {
+			
+			auth["tenantId"] = tenantID
+		}
+		
+		return ["auth":auth]
+	}
+}
+
 extension ConoHaAPI {
 	
 	public class Identity : API {
@@ -59,6 +80,24 @@ extension ConoHaAPI {
 			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Version? {
 				
 				return decode(object["version"] as! [String:AnyObject])
+			}
+		}
+		
+		public struct PostTokens : IdentityRequest {
+			
+			public let method:HTTPMethod = .POST
+			public let path:String = "/v2.0/tokens"
+
+			public var parameters:JSONObject
+			
+			public init(username:String, password:String, tenantID:String?) {
+				
+				self.parameters = PostTokens.makeAuth(username, password: password, tenantID: tenantID)
+			}
+
+			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Access? {
+				
+				return decode(object["access"] as! [String:AnyObject])
 			}
 		}
 	}

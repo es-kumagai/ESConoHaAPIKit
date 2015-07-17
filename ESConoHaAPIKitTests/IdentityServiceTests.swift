@@ -44,7 +44,7 @@ class IdentityServiceTests: XCTestCase {
 		
 		let request = ConoHaAPI.Identity.GetVersionList()
 		
-		ConoHaAPI.Identity.sendRequest(request) { response in
+		ConoHaAPI.sendRequest(request) { response in
 			
 			defer {
 				
@@ -90,7 +90,7 @@ class IdentityServiceTests: XCTestCase {
 		
 		let request = ConoHaAPI.Identity.GetVersionDetail()
 		
-		ConoHaAPI.Identity.sendRequest(request) { response in
+		ConoHaAPI.sendRequest(request) { response in
 			
 			defer {
 				
@@ -113,6 +113,54 @@ class IdentityServiceTests: XCTestCase {
 				XCTAssertEqual(version.mediaTypes[1].base, "application/xml")
 				XCTAssertEqual(version.status, Status.Stable)
 				XCTAssertEqual(version.updated, self.updated)
+				
+			case .Failure(let error):
+				XCTFail(String(reflecting: error))
+			}
+		}
+		
+		self.waitForExpectationsWithTimeout(10.0) {
+			
+			print($0?.description)
+		}
+	}
+	
+	func testPostToken() {
+		
+		let expectation = self.expectationWithDescription("IdentityService")
+		
+		let request = ConoHaAPI.Identity.PostTokens(username: user.name, password: user.password, tenantID: user.tenantID)
+		
+		let parametersData = try! NSJSONSerialization.dataWithJSONObject(request.parameters, options: [])
+		let parametersString = NSString(data:parametersData, encoding:NSUTF8StringEncoding)!
+
+		XCTAssertEqual(parametersString, "{\"auth\":{\"passwordCredentials\":{\"password\":\"\(user.password)\",\"username\":\"\(user.name)\"},\"tenantId\":\"\(user.tenantID!)\"}}")
+		
+		ConoHaAPI.Identity.sendRequest(request) { response in
+			
+			defer {
+				
+				expectation.fulfill()
+			}
+			
+			switch response {
+				
+			case .Success(let access):
+				print("Post Token : \(access.token.id)")
+				XCTAssertTrue(access.token.tenant != nil)
+				XCTAssertTrue(access.token.tenant!.enabled)
+				XCTAssertEqual(access.token.tenant!.id, user.tenantID!)
+				XCTAssertEqual(access.token.auditIds.count, 1)
+				
+				XCTAssertTrue(access.metadata.isAdmin == false)
+				XCTAssertEqual(access.metadata.roleIDs.count, 2)
+				
+				XCTAssertEqual(access.user.name, user.name)
+				XCTAssertEqual(access.user.username, user.name)
+				XCTAssertEqual(access.user.rolesLinks.count, 0)
+				XCTAssertEqual(access.user.roles.count, 2)
+				XCTAssertEqual(access.user.roles[0].name, "SwiftOperator")
+				XCTAssertEqual(access.user.roles[1].name, "_member_")
 				
 			case .Failure(let error):
 				XCTFail(String(reflecting: error))
