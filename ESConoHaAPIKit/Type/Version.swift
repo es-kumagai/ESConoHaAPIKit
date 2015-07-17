@@ -10,11 +10,11 @@ import Himotoki
 
 public struct Version {
 	
-	var id:VersionID
-	var links:[Link]
-	var mediaTypes:[MediaType]
-	var status:Status
-	var updated:NSDate
+	public var id:VersionID
+	public var links:[Link]
+	public var mediaTypes:[MediaType]
+	public var status:Status
+	public var updated:NSDate
 }
 
 extension Version : Decodable {

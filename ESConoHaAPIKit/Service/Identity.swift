@@ -30,6 +30,10 @@ extension ConoHaAPI {
 			public let method:HTTPMethod = .GET
 			public let path:String = "/"
 			
+			public init() {
+				
+			}
+			
 			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Version? {
 				
 				guard let dictionary = object as? [String:AnyObject], let version = dictionary["version"] as? [String:AnyObject] else {
