@@ -14,12 +14,12 @@
 		B1248A661B5857A5000C46AD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A641B5857A5000C46AD /* Extension.swift */; };
 		B1248A681B5857C7000C46AD /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A671B5857C7000C46AD /* Version.swift */; };
 		B1248A691B5857C7000C46AD /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A671B5857C7000C46AD /* Version.swift */; };
-		B1248A6A1B5858F2000C46AD /* ESConoHaAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */; };
-		B1248A6B1B5858F3000C46AD /* ESConoHaAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */; };
 		B1362B091B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */; };
 		B1362B0A1B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */; };
 		B1362B0D1B5866D000FC7443 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0C1B5866D000FC7443 /* Identity.swift */; };
 		B1362B0E1B5866D000FC7443 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0C1B5866D000FC7443 /* Identity.swift */; };
+		B1362B101B588D7800FC7443 /* IdentityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */; };
+		B1362B111B588D7800FC7443 /* IdentityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */; };
 		B13D5F871B57D19700A07599 /* ESConoHaAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */; };
 		B13D5F8C1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F8B1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift */; };
 		B13D5F9C1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = B13D5F9B1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,9 +59,9 @@
 		B1248A671B5857C7000C46AD /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConoHaAPIKit.swift; sourceTree = "<group>"; };
 		B1362B0C1B5866D000FC7443 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityServiceTests.swift; sourceTree = "<group>"; };
 		B13D5F5F1B57D12600A07599 /* ESConoHaAPIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESConoHaAPIKit.h; sourceTree = "<group>"; };
 		B13D5F611B57D12600A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESConoHaAPIKitTests.swift; sourceTree = "<group>"; };
 		B13D5F6D1B57D12600A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B13D5F761B57D13E00A07599 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESConoHaAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,7 +189,7 @@
 		B13D5F6A1B57D12600A07599 /* ESConoHaAPIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */,
+				B1362B0F1B588D7800FC7443 /* IdentityServiceTests.swift */,
 				B13D5F6D1B57D12600A07599 /* Info.plist */,
 			);
 			path = ESConoHaAPIKitTests;
@@ -594,7 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13D5F8C1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift in Sources */,
-				B1248A6A1B5858F2000C46AD /* ESConoHaAPIKitTests.swift in Sources */,
+				B1362B101B588D7800FC7443 /* IdentityServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13D5FA81B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift in Sources */,
-				B1248A6B1B5858F3000C46AD /* ESConoHaAPIKitTests.swift in Sources */,
+				B1362B111B588D7800FC7443 /* IdentityServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

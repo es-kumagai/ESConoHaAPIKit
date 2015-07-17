@@ -17,7 +17,7 @@ extension IdentityRequest {
 	
 	public var baseURL:NSURL {
 		
-		return NSURL(string: "https://identity.tyo1.conoha.io/v2.0")!
+		return NSURL(string: "https://identity.tyo1.conoha.io")!
 	}
 }
 
@@ -34,14 +34,31 @@ extension ConoHaAPI {
 				
 			}
 			
-			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Version? {
+			public let acceptableStatusCodes = Set(300...300)
+			
+			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> [Version]? {
 				
-				guard let dictionary = object as? [String:AnyObject], let version = dictionary["version"] as? [String:AnyObject] else {
+				guard let dictionary = object as? [String:AnyObject], let versions = dictionary["versions"] as? [String:AnyObject] else {
 					
 					return nil
 				}
 				
-				return decode(version)
+				return decodeArray(versions["values"] as! [AnyObject])
+			}
+		}
+		
+		public struct GetVersionDetail : IdentityRequest {
+			
+			public let method:HTTPMethod = .GET
+			public let path:String = "/v2.0"
+			
+			public init() {
+				
+			}
+			
+			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Version? {
+				
+				return decode(object["version"] as! [String:AnyObject])
 			}
 		}
 	}
