@@ -7,63 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B13D5F601B57D12600A07599 /* ESConoHaAPIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B13D5F5F1B57D12600A07599 /* ESConoHaAPIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B13D5F671B57D12600A07599 /* ESConoHaAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13D5F5C1B57D12600A07599 /* ESConoHaAPIKit.framework */; };
-		B13D5F6C1B57D12600A07599 /* ESConoHaAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */; };
+		1D401CF691E9CFF6E12F9C43 /* Pods_ESConoHaAPIKit_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8C8F67B1E7D6078973C3BB /* Pods_ESConoHaAPIKit_OSXTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		65B3A89811C519FC3C1DCACB /* Pods_ESConoHaAPIKit_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A760D5337FFCAF98C6E0BD2 /* Pods_ESConoHaAPIKit_iOSTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6B01A67EBCEBD979721F8538 /* Pods_ESConoHaAPIKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ECF1C96CFC7BA0E52EAED1 /* Pods_ESConoHaAPIKit_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B1248A651B5857A5000C46AD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A641B5857A5000C46AD /* Extension.swift */; };
+		B1248A661B5857A5000C46AD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A641B5857A5000C46AD /* Extension.swift */; };
+		B1248A681B5857C7000C46AD /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A671B5857C7000C46AD /* Version.swift */; };
+		B1248A691B5857C7000C46AD /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1248A671B5857C7000C46AD /* Version.swift */; };
+		B1248A6A1B5858F2000C46AD /* ESConoHaAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */; };
+		B1248A6B1B5858F3000C46AD /* ESConoHaAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */; };
+		B1362B091B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */; };
+		B1362B0A1B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */; };
+		B1362B0D1B5866D000FC7443 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0C1B5866D000FC7443 /* Identity.swift */; };
+		B1362B0E1B5866D000FC7443 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1362B0C1B5866D000FC7443 /* Identity.swift */; };
+		B13D5F871B57D19700A07599 /* ESConoHaAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */; };
+		B13D5F8C1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5F8B1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift */; };
+		B13D5F9C1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = B13D5F9B1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B13D5FA31B57D1B100A07599 /* ESConoHaAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13D5F991B57D1B100A07599 /* ESConoHaAPIKit.framework */; };
+		B13D5FA81B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D5FA71B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift */; };
+		D0ED7BAF63C4E980424749EA /* Pods_ESConoHaAPIKit_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07FDDF00A77EAC196240E2D /* Pods_ESConoHaAPIKit_OSX.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B13D5F681B57D12600A07599 /* PBXContainerItemProxy */ = {
+		B13D5F881B57D19700A07599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B13D5F531B57D12600A07599 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B13D5F5B1B57D12600A07599;
-			remoteInfo = ESConoHaAPIKit;
+			remoteGlobalIDString = B13D5F7C1B57D19700A07599;
+			remoteInfo = ESConoHaAPIKit_iOS;
+		};
+		B13D5FA41B57D1B100A07599 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B13D5F531B57D12600A07599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B13D5F981B57D1B100A07599;
+			remoteInfo = ESConoHaAPIKit_OSX;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B13D5F5C1B57D12600A07599 /* ESConoHaAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESConoHaAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E60F00DC0145014FD34CB20 /* Pods-ESConoHaAPIKit_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_iOS/Pods-ESConoHaAPIKit_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3825F46BFE45ECC307E783E2 /* Pods-ESConoHaAPIKit_OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_OSXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_OSXTests/Pods-ESConoHaAPIKit_OSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A8472E4025538F8F00CFBB7 /* Pods-ESConoHaAPIKit_OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_OSX/Pods-ESConoHaAPIKit_OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8C8F67B1E7D6078973C3BB /* Pods_ESConoHaAPIKit_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESConoHaAPIKit_OSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A189C32B7F1EF91B5B93E54 /* Pods-ESConoHaAPIKit_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_iOS/Pods-ESConoHaAPIKit_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8A760D5337FFCAF98C6E0BD2 /* Pods_ESConoHaAPIKit_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESConoHaAPIKit_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D30404B8E70510128ED53A /* Pods-ESConoHaAPIKit_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_iOSTests/Pods-ESConoHaAPIKit_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1ECF1C96CFC7BA0E52EAED1 /* Pods_ESConoHaAPIKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESConoHaAPIKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AD5D91AE8AB7E2852A82F2 /* Pods-ESConoHaAPIKit_OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_OSX/Pods-ESConoHaAPIKit_OSX.release.xcconfig"; sourceTree = "<group>"; };
+		B1248A641B5857A5000C46AD /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B1248A671B5857C7000C46AD /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConoHaAPIKit.swift; sourceTree = "<group>"; };
+		B1362B0C1B5866D000FC7443 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		B13D5F5F1B57D12600A07599 /* ESConoHaAPIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESConoHaAPIKit.h; sourceTree = "<group>"; };
 		B13D5F611B57D12600A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B13D5F661B57D12600A07599 /* ESConoHaAPIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESConoHaAPIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13D5F6B1B57D12600A07599 /* ESConoHaAPIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESConoHaAPIKitTests.swift; sourceTree = "<group>"; };
 		B13D5F6D1B57D12600A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13D5F761B57D13E00A07599 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESConoHaAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13D5F7F1B57D19700A07599 /* ESConoHaAPIKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESConoHaAPIKit_iOS.h; sourceTree = "<group>"; };
+		B13D5F811B57D19700A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13D5F861B57D19700A07599 /* ESConoHaAPIKit_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESConoHaAPIKit_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13D5F8B1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESConoHaAPIKit_iOSTests.swift; sourceTree = "<group>"; };
+		B13D5F8D1B57D19700A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13D5F991B57D1B100A07599 /* ESConoHaAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESConoHaAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13D5F9B1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESConoHaAPIKit_OSX.h; sourceTree = "<group>"; };
+		B13D5F9D1B57D1B100A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13D5FA21B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESConoHaAPIKit_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13D5FA71B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESConoHaAPIKit_OSXTests.swift; sourceTree = "<group>"; };
+		B13D5FA91B57D1B100A07599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07FDDF00A77EAC196240E2D /* Pods_ESConoHaAPIKit_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESConoHaAPIKit_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DCA64354E337919BB2191B /* Pods-ESConoHaAPIKit_OSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_OSXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_OSXTests/Pods-ESConoHaAPIKit_OSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8DD59ADCC97CDB619C3C433 /* Pods-ESConoHaAPIKit_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESConoHaAPIKit_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESConoHaAPIKit_iOSTests/Pods-ESConoHaAPIKit_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B13D5F581B57D12600A07599 /* Frameworks */ = {
+		B13D5F791B57D19700A07599 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B01A67EBCEBD979721F8538 /* Pods_ESConoHaAPIKit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B13D5F631B57D12600A07599 /* Frameworks */ = {
+		B13D5F831B57D19700A07599 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13D5F671B57D12600A07599 /* ESConoHaAPIKit.framework in Frameworks */,
+				B13D5F871B57D19700A07599 /* ESConoHaAPIKit.framework in Frameworks */,
+				65B3A89811C519FC3C1DCACB /* Pods_ESConoHaAPIKit_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F951B57D1B100A07599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED7BAF63C4E980424749EA /* Pods_ESConoHaAPIKit_OSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F9F1B57D1B100A07599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13D5FA31B57D1B100A07599 /* ESConoHaAPIKit.framework in Frameworks */,
+				1D401CF691E9CFF6E12F9C43 /* Pods_ESConoHaAPIKit_OSXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89707BCB3958463E17F7343A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07FDDF00A77EAC196240E2D /* Pods_ESConoHaAPIKit_OSX.framework */,
+				A1ECF1C96CFC7BA0E52EAED1 /* Pods_ESConoHaAPIKit_iOS.framework */,
+				7E8C8F67B1E7D6078973C3BB /* Pods_ESConoHaAPIKit_OSXTests.framework */,
+				8A760D5337FFCAF98C6E0BD2 /* Pods_ESConoHaAPIKit_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1248A631B585796000C46AD /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				B1248A641B5857A5000C46AD /* Extension.swift */,
+				B1248A671B5857C7000C46AD /* Version.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		B1362B0B1B5866BC00FC7443 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B1362B0C1B5866D000FC7443 /* Identity.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B13D5F521B57D12600A07599 = {
 			isa = PBXGroup;
 			children = (
+				B13D5F761B57D13E00A07599 /* Podfile */,
 				B13D5F5E1B57D12600A07599 /* ESConoHaAPIKit */,
+				B13D5F7E1B57D19700A07599 /* ESConoHaAPIKit_iOS */,
+				B13D5F9A1B57D1B100A07599 /* ESConoHaAPIKit_OSX */,
 				B13D5F6A1B57D12600A07599 /* ESConoHaAPIKitTests */,
+				B13D5F8A1B57D19700A07599 /* ESConoHaAPIKit_iOSTests */,
+				B13D5FA61B57D1B100A07599 /* ESConoHaAPIKit_OSXTests */,
 				B13D5F5D1B57D12600A07599 /* Products */,
+				F286216BDC612F308C017FDB /* Pods */,
+				89707BCB3958463E17F7343A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B13D5F5D1B57D12600A07599 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B13D5F5C1B57D12600A07599 /* ESConoHaAPIKit.framework */,
-				B13D5F661B57D12600A07599 /* ESConoHaAPIKitTests.xctest */,
+				B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */,
+				B13D5F861B57D19700A07599 /* ESConoHaAPIKit_iOSTests.xctest */,
+				B13D5F991B57D1B100A07599 /* ESConoHaAPIKit.framework */,
+				B13D5FA21B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +177,9 @@
 		B13D5F5E1B57D12600A07599 /* ESConoHaAPIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B1362B081B5865F200FC7443 /* ConoHaAPIKit.swift */,
+				B1248A631B585796000C46AD /* Type */,
+				B1362B0B1B5866BC00FC7443 /* Service */,
 				B13D5F5F1B57D12600A07599 /* ESConoHaAPIKit.h */,
 				B13D5F611B57D12600A07599 /* Info.plist */,
 			);
@@ -86,54 +195,158 @@
 			path = ESConoHaAPIKitTests;
 			sourceTree = "<group>";
 		};
+		B13D5F7E1B57D19700A07599 /* ESConoHaAPIKit_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B13D5F7F1B57D19700A07599 /* ESConoHaAPIKit_iOS.h */,
+				B13D5F811B57D19700A07599 /* Info.plist */,
+			);
+			path = ESConoHaAPIKit_iOS;
+			sourceTree = "<group>";
+		};
+		B13D5F8A1B57D19700A07599 /* ESConoHaAPIKit_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B13D5F8B1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift */,
+				B13D5F8D1B57D19700A07599 /* Info.plist */,
+			);
+			path = ESConoHaAPIKit_iOSTests;
+			sourceTree = "<group>";
+		};
+		B13D5F9A1B57D1B100A07599 /* ESConoHaAPIKit_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				B13D5F9B1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h */,
+				B13D5F9D1B57D1B100A07599 /* Info.plist */,
+			);
+			path = ESConoHaAPIKit_OSX;
+			sourceTree = "<group>";
+		};
+		B13D5FA61B57D1B100A07599 /* ESConoHaAPIKit_OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				B13D5FA71B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift */,
+				B13D5FA91B57D1B100A07599 /* Info.plist */,
+			);
+			path = ESConoHaAPIKit_OSXTests;
+			sourceTree = "<group>";
+		};
+		F286216BDC612F308C017FDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A8472E4025538F8F00CFBB7 /* Pods-ESConoHaAPIKit_OSX.debug.xcconfig */,
+				A2AD5D91AE8AB7E2852A82F2 /* Pods-ESConoHaAPIKit_OSX.release.xcconfig */,
+				8A189C32B7F1EF91B5B93E54 /* Pods-ESConoHaAPIKit_iOS.debug.xcconfig */,
+				2E60F00DC0145014FD34CB20 /* Pods-ESConoHaAPIKit_iOS.release.xcconfig */,
+				D6DCA64354E337919BB2191B /* Pods-ESConoHaAPIKit_OSXTests.debug.xcconfig */,
+				3825F46BFE45ECC307E783E2 /* Pods-ESConoHaAPIKit_OSXTests.release.xcconfig */,
+				95D30404B8E70510128ED53A /* Pods-ESConoHaAPIKit_iOSTests.debug.xcconfig */,
+				D8DD59ADCC97CDB619C3C433 /* Pods-ESConoHaAPIKit_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B13D5F591B57D12600A07599 /* Headers */ = {
+		B13D5F7A1B57D19700A07599 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13D5F601B57D12600A07599 /* ESConoHaAPIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F961B57D1B100A07599 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13D5F9C1B57D1B100A07599 /* ESConoHaAPIKit_OSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B13D5F5B1B57D12600A07599 /* ESConoHaAPIKit */ = {
+		B13D5F7C1B57D19700A07599 /* ESConoHaAPIKit_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13D5F701B57D12600A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit" */;
+			buildConfigurationList = B13D5F8E1B57D19700A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_iOS" */;
 			buildPhases = (
-				B13D5F571B57D12600A07599 /* Sources */,
-				B13D5F581B57D12600A07599 /* Frameworks */,
-				B13D5F591B57D12600A07599 /* Headers */,
-				B13D5F5A1B57D12600A07599 /* Resources */,
+				49E1C0FA4CEE3CEDDA970809 /* Check Pods Manifest.lock */,
+				B13D5F781B57D19700A07599 /* Sources */,
+				B13D5F791B57D19700A07599 /* Frameworks */,
+				B13D5F7A1B57D19700A07599 /* Headers */,
+				B13D5F7B1B57D19700A07599 /* Resources */,
+				BBF868DAACDAF657578880FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ESConoHaAPIKit;
-			productName = ESConoHaAPIKit;
-			productReference = B13D5F5C1B57D12600A07599 /* ESConoHaAPIKit.framework */;
+			name = ESConoHaAPIKit_iOS;
+			productName = ESConoHaAPIKit_iOS;
+			productReference = B13D5F7D1B57D19700A07599 /* ESConoHaAPIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B13D5F651B57D12600A07599 /* ESConoHaAPIKitTests */ = {
+		B13D5F851B57D19700A07599 /* ESConoHaAPIKit_iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13D5F731B57D12600A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKitTests" */;
+			buildConfigurationList = B13D5F911B57D19700A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_iOSTests" */;
 			buildPhases = (
-				B13D5F621B57D12600A07599 /* Sources */,
-				B13D5F631B57D12600A07599 /* Frameworks */,
-				B13D5F641B57D12600A07599 /* Resources */,
+				76E74BAC63C4DD4F123BE7C8 /* Check Pods Manifest.lock */,
+				B13D5F821B57D19700A07599 /* Sources */,
+				B13D5F831B57D19700A07599 /* Frameworks */,
+				B13D5F841B57D19700A07599 /* Resources */,
+				0BFFD35EAC6CF22A5C9DC215 /* Embed Pods Frameworks */,
+				3C3EA768C9FBA55E97B93F27 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B13D5F691B57D12600A07599 /* PBXTargetDependency */,
+				B13D5F891B57D19700A07599 /* PBXTargetDependency */,
 			);
-			name = ESConoHaAPIKitTests;
-			productName = ESConoHaAPIKitTests;
-			productReference = B13D5F661B57D12600A07599 /* ESConoHaAPIKitTests.xctest */;
+			name = ESConoHaAPIKit_iOSTests;
+			productName = ESConoHaAPIKit_iOSTests;
+			productReference = B13D5F861B57D19700A07599 /* ESConoHaAPIKit_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B13D5F981B57D1B100A07599 /* ESConoHaAPIKit_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B13D5FAA1B57D1B100A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_OSX" */;
+			buildPhases = (
+				432D0D8E781372033FBFD5BF /* Check Pods Manifest.lock */,
+				B13D5F941B57D1B100A07599 /* Sources */,
+				B13D5F951B57D1B100A07599 /* Frameworks */,
+				B13D5F961B57D1B100A07599 /* Headers */,
+				B13D5F971B57D1B100A07599 /* Resources */,
+				CABA7604D0B5F3258155BF98 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESConoHaAPIKit_OSX;
+			productName = ESConoHaAPIKit_OSX;
+			productReference = B13D5F991B57D1B100A07599 /* ESConoHaAPIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B13D5FA11B57D1B100A07599 /* ESConoHaAPIKit_OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B13D5FAD1B57D1B100A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_OSXTests" */;
+			buildPhases = (
+				32EC61AFE08C01CAAEEE59D5 /* Check Pods Manifest.lock */,
+				B13D5F9E1B57D1B100A07599 /* Sources */,
+				B13D5F9F1B57D1B100A07599 /* Frameworks */,
+				B13D5FA01B57D1B100A07599 /* Resources */,
+				A3AACD05AE3CCAF6CA52A676 /* Embed Pods Frameworks */,
+				7A1328E9B557DD3147C1FFF5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B13D5FA51B57D1B100A07599 /* PBXTargetDependency */,
+			);
+			name = ESConoHaAPIKit_OSXTests;
+			productName = ESConoHaAPIKit_OSXTests;
+			productReference = B13D5FA21B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -142,13 +355,20 @@
 		B13D5F531B57D12600A07599 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "EasyStyle G.K.";
 				TargetAttributes = {
-					B13D5F5B1B57D12600A07599 = {
+					B13D5F7C1B57D19700A07599 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					B13D5F651B57D12600A07599 = {
+					B13D5F851B57D19700A07599 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B13D5F981B57D1B100A07599 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B13D5FA11B57D1B100A07599 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -165,21 +385,37 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B13D5F5B1B57D12600A07599 /* ESConoHaAPIKit */,
-				B13D5F651B57D12600A07599 /* ESConoHaAPIKitTests */,
+				B13D5F7C1B57D19700A07599 /* ESConoHaAPIKit_iOS */,
+				B13D5F981B57D1B100A07599 /* ESConoHaAPIKit_OSX */,
+				B13D5F851B57D19700A07599 /* ESConoHaAPIKit_iOSTests */,
+				B13D5FA11B57D1B100A07599 /* ESConoHaAPIKit_OSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B13D5F5A1B57D12600A07599 /* Resources */ = {
+		B13D5F7B1B57D19700A07599 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B13D5F641B57D12600A07599 /* Resources */ = {
+		B13D5F841B57D19700A07599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F971B57D1B100A07599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5FA01B57D1B100A07599 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,29 +424,212 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		B13D5F571B57D12600A07599 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		0BFFD35EAC6CF22A5C9DC215 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESConoHaAPIKit_iOSTests/Pods-ESConoHaAPIKit_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		B13D5F621B57D12600A07599 /* Sources */ = {
+		32EC61AFE08C01CAAEEE59D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C3EA768C9FBA55E97B93F27 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESConoHaAPIKit_iOSTests/Pods-ESConoHaAPIKit_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		432D0D8E781372033FBFD5BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49E1C0FA4CEE3CEDDA970809 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76E74BAC63C4DD4F123BE7C8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A1328E9B557DD3147C1FFF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESConoHaAPIKit_OSXTests/Pods-ESConoHaAPIKit_OSXTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3AACD05AE3CCAF6CA52A676 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESConoHaAPIKit_OSXTests/Pods-ESConoHaAPIKit_OSXTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBF868DAACDAF657578880FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESConoHaAPIKit_iOS/Pods-ESConoHaAPIKit_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABA7604D0B5F3258155BF98 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESConoHaAPIKit_OSX/Pods-ESConoHaAPIKit_OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B13D5F781B57D19700A07599 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13D5F6C1B57D12600A07599 /* ESConoHaAPIKitTests.swift in Sources */,
+				B1248A681B5857C7000C46AD /* Version.swift in Sources */,
+				B1362B0D1B5866D000FC7443 /* Identity.swift in Sources */,
+				B1248A651B5857A5000C46AD /* Extension.swift in Sources */,
+				B1362B091B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F821B57D19700A07599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13D5F8C1B57D19700A07599 /* ESConoHaAPIKit_iOSTests.swift in Sources */,
+				B1248A6A1B5858F2000C46AD /* ESConoHaAPIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F941B57D1B100A07599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1248A691B5857C7000C46AD /* Version.swift in Sources */,
+				B1362B0E1B5866D000FC7443 /* Identity.swift in Sources */,
+				B1248A661B5857A5000C46AD /* Extension.swift in Sources */,
+				B1362B0A1B5865F200FC7443 /* ConoHaAPIKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B13D5F9E1B57D1B100A07599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13D5FA81B57D1B100A07599 /* ESConoHaAPIKit_OSXTests.swift in Sources */,
+				B1248A6B1B5858F3000C46AD /* ESConoHaAPIKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B13D5F691B57D12600A07599 /* PBXTargetDependency */ = {
+		B13D5F891B57D19700A07599 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B13D5F5B1B57D12600A07599 /* ESConoHaAPIKit */;
-			targetProxy = B13D5F681B57D12600A07599 /* PBXContainerItemProxy */;
+			target = B13D5F7C1B57D19700A07599 /* ESConoHaAPIKit_iOS */;
+			targetProxy = B13D5F881B57D19700A07599 /* PBXContainerItemProxy */;
+		};
+		B13D5FA51B57D1B100A07599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B13D5F981B57D1B100A07599 /* ESConoHaAPIKit_OSX */;
+			targetProxy = B13D5FA41B57D1B100A07599 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -252,10 +671,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -294,9 +713,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -304,55 +723,141 @@
 			};
 			name = Release;
 		};
-		B13D5F711B57D12600A07599 /* Debug */ = {
+		B13D5F8F1B57D19700A07599 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A189C32B7F1EF91B5B93E54 /* Pods-ESConoHaAPIKit_iOS.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ESConoHaAPIKit/Info.plist;
+				INFOPLIST_FILE = ESConoHaAPIKit_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-iOS";
+				PRODUCT_NAME = ESConoHaAPIKit;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B13D5F721B57D12600A07599 /* Release */ = {
+		B13D5F901B57D19700A07599 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E60F00DC0145014FD34CB20 /* Pods-ESConoHaAPIKit_iOS.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ESConoHaAPIKit/Info.plist;
+				INFOPLIST_FILE = ESConoHaAPIKit_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-iOS";
+				PRODUCT_NAME = ESConoHaAPIKit;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		B13D5F741B57D12600A07599 /* Debug */ = {
+		B13D5F921B57D19700A07599 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D30404B8E70510128ED53A /* Pods-ESConoHaAPIKit_iOSTests.debug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = ESConoHaAPIKitTests/Info.plist;
+				INFOPLIST_FILE = ESConoHaAPIKit_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		B13D5F751B57D12600A07599 /* Release */ = {
+		B13D5F931B57D19700A07599 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8DD59ADCC97CDB619C3C433 /* Pods-ESConoHaAPIKit_iOSTests.release.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = ESConoHaAPIKitTests/Info.plist;
+				INFOPLIST_FILE = ESConoHaAPIKit_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B13D5FAB1B57D1B100A07599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8472E4025538F8F00CFBB7 /* Pods-ESConoHaAPIKit_OSX.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ESConoHaAPIKit_OSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-OSX";
+				PRODUCT_NAME = ESConoHaAPIKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B13D5FAC1B57D1B100A07599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AD5D91AE8AB7E2852A82F2 /* Pods-ESConoHaAPIKit_OSX.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ESConoHaAPIKit_OSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-OSX";
+				PRODUCT_NAME = ESConoHaAPIKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B13D5FAE1B57D1B100A07599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DCA64354E337919BB2191B /* Pods-ESConoHaAPIKit_OSXTests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ESConoHaAPIKit_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B13D5FAF1B57D1B100A07599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3825F46BFE45ECC307E783E2 /* Pods-ESConoHaAPIKit_OSXTests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ESConoHaAPIKit_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESConoHaAPIKit-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -368,21 +873,41 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B13D5F701B57D12600A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit" */ = {
+		B13D5F8E1B57D19700A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B13D5F711B57D12600A07599 /* Debug */,
-				B13D5F721B57D12600A07599 /* Release */,
+				B13D5F8F1B57D19700A07599 /* Debug */,
+				B13D5F901B57D19700A07599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B13D5F731B57D12600A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKitTests" */ = {
+		B13D5F911B57D19700A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B13D5F741B57D12600A07599 /* Debug */,
-				B13D5F751B57D12600A07599 /* Release */,
+				B13D5F921B57D19700A07599 /* Debug */,
+				B13D5F931B57D19700A07599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B13D5FAA1B57D1B100A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13D5FAB1B57D1B100A07599 /* Debug */,
+				B13D5FAC1B57D1B100A07599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B13D5FAD1B57D1B100A07599 /* Build configuration list for PBXNativeTarget "ESConoHaAPIKit_OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13D5FAE1B57D1B100A07599 /* Debug */,
+				B13D5FAF1B57D1B100A07599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
