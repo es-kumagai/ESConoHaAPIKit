@@ -25,7 +25,7 @@ extension ConoHaAPI {
 	
 	public class Identity : API {
 		
-		public struct GetVersion : IdentityRequest {
+		public struct GetVersionList : IdentityRequest {
 			
 			public let method:HTTPMethod = .GET
 			public let path:String = "/"

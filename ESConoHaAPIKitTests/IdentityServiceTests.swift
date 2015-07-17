@@ -38,11 +38,11 @@ class IdentityServiceTests: XCTestCase {
         super.tearDown()
     }
 
-	func testVersion() {
+	func testVersionList() {
 		
 		let expectation = self.expectationWithDescription("IdentityService")
 		
-		let request = ConoHaAPI.Identity.GetVersion()
+		let request = ConoHaAPI.Identity.GetVersionList()
 		
 		ConoHaAPI.Identity.sendRequest(request) { response in
 			
