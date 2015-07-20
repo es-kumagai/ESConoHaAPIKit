@@ -67,11 +67,9 @@ extension APIError : CustomDebugStringConvertible {
 		case ResponseBodyDeserializationError(let error):
 			return "Response body deserialization error (\(error))"
 			
-			/// Indicates `responseFromObject()` or `errorFromObject()` returned nil.
 		case InvalidResponseStructure(let object):
 			return "Invalid response structure (\(object))"
 			
-			/// Failed to cast `URLResponse` to `NSHTTPURLResponse`.
 		case NotHTTPURLResponse(let response):
 			return "Not HTTP URL Response (\(response))"
 		}
