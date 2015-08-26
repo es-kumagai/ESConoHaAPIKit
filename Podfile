@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 APIKitGit = 'https://github.com/ishkawa/APIKit.git'
-APIKitBranch = 'master'
+APIKitBranch = 'xcode7-beta6'
 
 HimotokiGit = 'https://github.com/ikesyo/Himotoki.git'
 HimotokiBranch = 'swift2'
