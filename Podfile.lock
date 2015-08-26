@@ -7,7 +7,6 @@ PODS:
 DEPENDENCIES:
   - APIKit (from `https://github.com/ishkawa/APIKit.git`, branch `xcode7-beta6`)
   - Himotoki (from `https://github.com/ikesyo/Himotoki.git`, branch `swift2`)
-  - Result
 
 EXTERNAL SOURCES:
   APIKit:

@@ -1,52 +1,42 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-APIKitGit = 'https://github.com/ishkawa/APIKit.git'
-APIKitBranch = 'xcode7-beta6'
+use_frameworks!
 
-HimotokiGit = 'https://github.com/ikesyo/Himotoki.git'
-HimotokiBranch = 'swift2'
+def pods
 
-ResultGit = 'https://github.com/ishkawa/Result.git'
-ResultBranch = 'master'
+	pod 'APIKit', :git => 'https://github.com/ishkawa/APIKit.git', :branch => 'xcode7-beta6'
+	pod 'Himotoki', :git => 'https://github.com/ikesyo/Himotoki.git', :branch => 'swift2'
+
+end
 
 target :ESConoHaAPIKit_OSX do
 
 	platform :osx, '10.9'
-	use_frameworks!
 
-	pod 'APIKit', :git => APIKitGit, :branch => APIKitBranch
-	pod 'Himotoki', :git => HimotokiGit, :branch => HimotokiBranch
+	pods
 
 end
 
 target :ESConoHaAPIKit_iOS do
 
 	platform :ios, '8.0'
-	use_frameworks!
 
-	pod 'APIKit', :git => APIKitGit, :branch => APIKitBranch
-	pod 'Himotoki', :git => HimotokiGit, :branch => HimotokiBranch
+	pods
 
 end
 
 target :ESConoHaAPIKit_OSXTests do
 
 	platform :osx, '10.10'
-	use_frameworks!
 
-	pod 'APIKit', :git => APIKitGit, :branch => APIKitBranch
-	pod 'Himotoki', :git => HimotokiGit, :branch => HimotokiBranch
-	pod 'Result'
+	pods
 
 end
 
 target :ESConoHaAPIKit_iOSTests do
 
 	platform :ios, '9.0'
-	use_frameworks!
 
-	pod 'APIKit', :git => APIKitGit, :branch => APIKitBranch
-	pod 'Himotoki', :git => HimotokiGit, :branch => HimotokiBranch
-	pod 'Result'
+	pods
 
 end
