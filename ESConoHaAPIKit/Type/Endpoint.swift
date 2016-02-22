@@ -16,13 +16,12 @@ public struct Endpoint {
 
 extension Endpoint : Decodable {
 	
-	public static func decode(e: Extractor) -> Endpoint? {
+	public static func decode(e: Extractor) throws -> Endpoint {
 		
-		return build(
-			
-			e <| "region",
-			(e <| "publicURL").flatMap { NSURL(string: $0)! }
-			
-		).map(Endpoint.init)
+		return try Endpoint(
+		
+			region: e.value("region"),
+			publicURL: e.value("publicURL")
+		)
 	}
 }

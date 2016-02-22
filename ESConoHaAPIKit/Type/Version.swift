@@ -19,17 +19,16 @@ public struct Version {
 
 extension Version : Decodable {
 	
-	public static func decode(e: Extractor) -> Version? {
+	public static func decode(e: Extractor) throws -> Version {
 		
-		return build(
+		return try Version(
 			
-			(e <| "id").flatMap { VersionID($0) },
-			e <|| "links",
-			e <|| "media-types",
-			(e <| "status").flatMap { Status(rawValue: $0)! },
-			(e <| "updated").flatMap { NSDate(dateString: $0)! }
-			
-			).map(Version.init)
+			id: e.value("id"),
+			links: e.array("links"),
+			mediaTypes: e.array("media-types"),
+			status: Status(rawValue: e.value("status"))!,
+			updated: NSDate(dateString: e.value("updated"))!
+		)
 	}
 }
 
@@ -40,6 +39,14 @@ public struct VersionID {
 	public init(_ value:String) {
 		
 		self.value = value
+	}
+}
+
+extension VersionID : Decodable {
+
+	public static func decode(e: Extractor) throws -> VersionID {
+		
+		return try VersionID(String.decode(e))
 	}
 }
 
@@ -81,13 +88,12 @@ public struct MediaType {
 
 extension MediaType : Decodable {
 	
-	public static func decode(e: Extractor) -> MediaType? {
+	public static func decode(e: Extractor) throws -> MediaType {
 		
-		return build(
+		return try MediaType(
 			
-			e <| "base"
-			
-			).map(MediaType.init)
+			base: e.value("base")
+        )
 	}
 }
 

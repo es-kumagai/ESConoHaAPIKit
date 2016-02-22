@@ -17,15 +17,14 @@ public struct Link {
 
 extension Link : Decodable {
 	
-	public static func decode(e: Extractor) -> Link? {
+	public static func decode(e: Extractor) throws -> Link {
 		
-		return build(
+		return try Link(
 			
-			(e <| "href").flatMap(NSURL.init),
-			(e <| "rel").flatMap(LinkRel.init),
-			e <|? "type"
-			
-			).map(Link.init)
+			href: e.value("href"),
+			rel: e.value("rel"),
+			type: e.valueOptional("type")
+		)
 	}
 }
 
@@ -33,4 +32,17 @@ public enum LinkRel : String {
 	
 	case SelfLink = "self"
 	case DescribedBy = "describedby"
+}
+
+extension LinkRel : Decodable {
+	
+	public static func decode(e: Extractor) throws -> LinkRel {
+		
+		guard let rel = try LinkRel(rawValue: String.decode(e)) else {
+			
+			throw DecodeError.TypeMismatch(expected: "LinkRel", actual: "\(e.rawValue)", keyPath: nil)
+		}
+		
+		return rel
+	}
 }

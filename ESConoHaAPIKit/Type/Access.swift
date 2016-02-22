@@ -18,16 +18,15 @@ public struct Access {
 
 extension Access : Decodable {
 	
-	public static func decode(e: Extractor) -> Access? {
+	public static func decode(e: Extractor) throws -> Access {
 		
-		return build(
-
-			e <| "token",
-			e <|| "serviceCatalog",
-			e <| "user",
-			e <| "metadata"
+		return try Access(
 			
-		).map(Access.init)
+			token: e.value("token"),
+			serviceCatalog: e.array("serviceCatalog"),
+			user: e.value("user"),
+			metadata: e.value("metadata")
+		)
 	}
 }
 
@@ -39,13 +38,12 @@ public struct AccessMetadata {
 
 extension AccessMetadata : Decodable {
 	
-	public static func decode(e: Extractor) -> AccessMetadata? {
+	public static func decode(e: Extractor) throws -> AccessMetadata {
 		
-		return build(
+		return try AccessMetadata(
 			
-			e <| "is_admin",
-			e <|| "roles"
-			
-		).map(AccessMetadata.init)
+			isAdmin: e <| "is_admin",
+			roleIDs: e <|| "roles"
+		)
 	}
 }

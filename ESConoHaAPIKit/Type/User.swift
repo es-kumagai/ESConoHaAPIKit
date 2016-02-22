@@ -19,17 +19,16 @@ public struct User {
 
 extension User : Decodable {
 	
-	public static func decode(e: Extractor) -> User? {
+	public static func decode(e: Extractor) throws -> User {
 		
-		return build(
+		return try User(
 			
-			e <| "id",
-			e <| "name",
-			e <| "username",
-			e <|| "roles_links",
-			e <|| "roles"
-			
-			).map(User.init)
+			id: e.value("id"),
+			name: e.value("name"),
+			username: e.value("username"),
+			rolesLinks: e.array("roles_links"),
+			roles: e.array("roles")
+		)
 	}
 }
 
@@ -40,12 +39,11 @@ public struct UserRole {
 
 extension UserRole : Decodable {
 	
-	public static func decode(e: Extractor) -> UserRole? {
+	public static func decode(e: Extractor) throws -> UserRole {
 		
-		return build(
+		return try UserRole(
 			
-			e <| "name"
-
-		).map(UserRole.init)
+			name: e.value("name")
+		)
 	}
 }

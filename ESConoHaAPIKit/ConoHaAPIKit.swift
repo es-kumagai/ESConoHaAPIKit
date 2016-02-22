@@ -8,7 +8,7 @@
 
 import APIKit
 
-public final class ConoHaAPI : API {
+public final class ConoHaAPI : Session {
 	
 }
 

@@ -18,16 +18,15 @@ public struct ServiceCatalog {
 
 extension ServiceCatalog : Decodable {
 	
-	public static func decode(e: Extractor) -> ServiceCatalog? {
+	public static func decode(e: Extractor) throws -> ServiceCatalog {
 
-		return build(
+		return try ServiceCatalog(
 			
-			e <| "name",
-			e <| "type",
-			e <|| "endpoints",
-			e <||? "endpoints_link"
-			
-		).map(ServiceCatalog.init)
+			name: e.value("name"),
+			type: e.value("type"),
+			endpoints: e.array("endpoints"),
+			endpointsLinks: e.arrayOptional("endpoints_link")
+		)
 	}
 }
 
@@ -47,13 +46,13 @@ public enum ServiceCatalogType : String {
 
 extension ServiceCatalogType : Decodable {
 	
-	public static func decode(e: Extractor) -> ServiceCatalogType? {
+	public static func decode(e: Extractor) throws -> ServiceCatalogType {
 		
-		guard let value = e.rawValue as? String else {
-			
-			return nil
+		guard let type = try ServiceCatalogType(rawValue: String.decode(e)) else {
+
+			throw DecodeError.TypeMismatch(expected: "ServiceCatalogType", actual: "\(e.rawValue)", keyPath: nil)
 		}
 		
-		return ServiceCatalogType(rawValue: value)
+		return type
 	}
 }

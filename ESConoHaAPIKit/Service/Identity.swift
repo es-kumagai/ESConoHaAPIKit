@@ -9,7 +9,7 @@
 import APIKit
 import Himotoki
 
-public protocol IdentityRequest : Request {
+public protocol IdentityRequest : RequestType {
 	
 }
 
@@ -44,7 +44,7 @@ extension IdentityRequest {
 
 extension ConoHaAPI {
 	
-	public class Identity : API {
+	public class Identity : Session {
 		
 		public struct GetVersionList : IdentityRequest {
 			
@@ -64,7 +64,7 @@ extension ConoHaAPI {
 					return nil
 				}
 				
-				return decodeArray(versions["values"] as! [AnyObject])
+				return try? decodeArray(versions["values"] as! [AnyObject])
 			}
 		}
 		
@@ -79,7 +79,7 @@ extension ConoHaAPI {
 			
 			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Version? {
 				
-				return decode(object["version"] as! [String:AnyObject])
+				return try? decode(object["version"] as! [String:AnyObject])
 			}
 		}
 		
@@ -97,7 +97,7 @@ extension ConoHaAPI {
 
 			public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Access? {
 				
-				return decode(object["access"] as! [String:AnyObject])
+				return try? decode(object["access"] as! [String:AnyObject])
 			}
 		}
 	}

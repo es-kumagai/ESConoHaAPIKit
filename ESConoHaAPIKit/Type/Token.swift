@@ -19,16 +19,16 @@ public struct Token {
 
 extension Token : Decodable {
 	
-	public static func decode(e: Extractor) -> Token? {
+	public static func decode(e: Extractor) throws -> Token {
 		
-		return build(
+		return try Token(
 			
-			e <| "id",
-			(e <| "issued_at").flatMap { NSDate(dateString: $0)! },
-			(e <| "expires").flatMap { NSDate(dateString: $0)! },
-			e <|? "tenant",
-			e <|| "audit_ids"
+			id: e.value("id"),
+			issuedAt: NSDate(dateString: e.value("issued_at"))!,
+			expires: NSDate(dateString: e.value("expires"))!,
+			tenant: e.valueOptional("tenant"),
+			auditIds: e.array("audit_ids")
 			
-			).map(Token.init)
+		)
 	}
 }

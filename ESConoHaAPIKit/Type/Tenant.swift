@@ -22,19 +22,18 @@ public struct Tenant {
 
 extension Tenant : Decodable {
 	
-	public static func decode(e: Extractor) -> Tenant? {
+	public static func decode(e: Extractor) throws -> Tenant {
 		
-		return build(
+		return try Tenant(
 			
-			e <| "id",
-			e <| "name",
-			e <| "domain_id",
-			e <| "description",
-			e <| "enabled",
-			e <| "tyo1_image_size",
-			e <| "sin1_image_size",
-			e <| "sjc1_image_size"
-			
-			).map(Tenant.init)
+			id: e.value("id"),
+			name: e.value("name"),
+			domainId: e.value("domain_id"),
+			description: e.value("description"),
+			enabled: e.value("enabled"),
+			tyo1ImageSize: e.value("tyo1_image_size"),
+			sin1ImageSize: e.value("sin1_image_size"),
+			sjc1ImageSize: e.value("sjc1_image_size")
+		)
 	}
 }

@@ -1,32 +1,18 @@
 PODS:
-  - APIKit (1.0.0-beta3):
-    - Result (~> 0.6-beta.1)
-  - Himotoki (0.5.2)
-  - Result (0.6-beta.1)
+  - APIKit (1.1.2):
+    - Result (~> 1.0.1)
+  - Himotoki (1.5.0)
+  - Result (1.0.2)
 
 DEPENDENCIES:
-  - APIKit (from `https://github.com/ishkawa/APIKit.git`, branch `xcode7-beta6`)
-  - Himotoki (from `https://github.com/ikesyo/Himotoki.git`, branch `swift2`)
-
-EXTERNAL SOURCES:
-  APIKit:
-    :branch: xcode7-beta6
-    :git: https://github.com/ishkawa/APIKit.git
-  Himotoki:
-    :branch: swift2
-    :git: https://github.com/ikesyo/Himotoki.git
-
-CHECKOUT OPTIONS:
-  APIKit:
-    :commit: 2e524959b80262c3ff19e4af030b1ccfce2bf368
-    :git: https://github.com/ishkawa/APIKit.git
-  Himotoki:
-    :commit: 9f6717c4cca558377fe4d1223d443883be401530
-    :git: https://github.com/ikesyo/Himotoki.git
+  - APIKit
+  - Himotoki
 
 SPEC CHECKSUMS:
-  APIKit: 82cc9e00e7a40702d02084d9397ae41ad367cbc2
-  Himotoki: e83a10846e4e2739fd9847d8eb23d690d9fc8f88
-  Result: 6c990ec4a72470672f9fc5b6fef009da0f6f40d1
+  APIKit: d6e313f1ca3b0cae30a7059f872f7780d8a147ec
+  Himotoki: 7506d0a42c59ca4f7e348f22aee89e22c76c5711
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 80dfb5bdc7b70b9170596e4507200f32f33583c3
+
+COCOAPODS: 1.0.0.beta.2

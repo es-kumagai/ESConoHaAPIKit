@@ -4,8 +4,8 @@ use_frameworks!
 
 def pods
 
-	pod 'APIKit', :git => 'https://github.com/ishkawa/APIKit.git', :branch => 'xcode7-beta6'
-	pod 'Himotoki', :git => 'https://github.com/ikesyo/Himotoki.git', :branch => 'swift2'
+	pod 'APIKit'
+	pod 'Himotoki'
 
 end
 
